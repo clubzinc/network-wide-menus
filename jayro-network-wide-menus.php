@@ -17,8 +17,8 @@
 /**
  * On each menu load, check to see if it should load the network menu instead
  * 
- * @param mixed $content 
- * @param mixed $args
+ * @param mixed $content the menu content 
+ * @param mixed $args the menu arguments
  * @return mixed
  */
 function jayro_wp_nav_menu_filter( $content, $args )
@@ -69,8 +69,8 @@ add_filter( 'wp_nav_menu_objects', 'jayro_wp_nav_menu_filter', 999, 2 );
 /**
  * Flush all existing network menus in the cache when saving a navigation menu
  * 
- * @param integer $post_id
- * @param mixed $post
+ * @param integer $post_id the post id
+ * @param mixed $post the post content
  */
 function jayro_wp_nav_menu_flush( $post_id, $post )
 {
