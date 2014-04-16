@@ -19,7 +19,7 @@
  * 
  * @param mixed $content the menu content 
  * @param mixed $args the menu arguments
- * @return mixed
+ * @return mixed $content the menu content
  */
 function jayro_wp_nav_menu_filter( $content, $args )
 {
