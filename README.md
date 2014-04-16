@@ -1,7 +1,9 @@
 Jason Roman's WordPress Multiple Network-Wide Menus
 =================
 
-This package is forked from the <a href="https://github.com/rrennick/network-wide-menu">network-wide-menu</a> package.
+To get more information on the details of this plugin, please see this <a href="http://jayroman.com/blog/wordpress-network-wide-menus">blog post</a>.
+
+This package is forked from the <a href="https://github.com/rrennick/network-wide-menu">network-wide-menu</a> package (blog post <a href="http://wpmututorials.com/plugins/networkwide-menu/">here</a>.
 
 The original WordPress plugin only supports a single network-wide menu across sites.  This fork allows you to have as many menus as you want loaded across each network site.  This could be useful for a site with multiple menus where you have a subdomain that needs all of the same menus.
 
