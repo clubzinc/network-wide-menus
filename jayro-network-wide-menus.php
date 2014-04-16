@@ -9,6 +9,9 @@
  * Author URI: http://jayroman.com
  * Network: true
  * 
+ * Blog Post explaining installation and usage:
+ *   @link http://jayroman.com/blog/wordpress-network-wide-menus
+ * 
  * Modified From: Ron Ronnick's Network Wide Menus
  *   @link http://wpmututorials.com/plugins/networkwide-menu/
  *   @link https://github.com/rrennick/network-wide-menu
