@@ -1,14 +1,8 @@
-network-wide-menu
+Jason Roman's WordPress Multiple Network-Wide Menus
 =================
 
-Network Wide Menu for WordPress Networks
+This package is forked from the <a href="https://github.com/rrennick/network-wide-menu">network-wide-menu</a> package.
 
-Install in either the mu-plugins folder or network activate from the plugins folder
+The original WordPress plugin only supports a single network-wide menu across sites.  This fork allows you to have as many menus as you want loaded across each network site.  This could be useful for a site with multiple menus where you have a subdomain that needs all of the same menus.
 
-This plugin caches a copy of the menu items from the first registered navigation menu on the main site in the network.
-
-The cached menu items are used to replace the contents of the first registered navigation menu on all sub sites on the network.
-
-Subsite Requirements:
-
-- The sub site must have at least one navigation menu with one menu item before the filters used by this plugin come into effect.
+Simply unzip this package in the wp-plugins folder and then network activate it.  The plugin caches copies of the navigation menus on the network's main site, then these replace the corresponding menus on each sub site.  The sub-sites must have menus registered (with at least one menu item) in the same corresponding slots.
