@@ -23,9 +23,9 @@
  */
 function jayro_wp_nav_menu_filter( $content, $args )
 {
-    // the index of menus to be network-wide; defaults to the first 10 menus
-    // modify this as needed; future improvement could use an interface for setting and storing these
-    $network_menu_indices = range( 0, 9 );
+	// the index of menus to be network-wide; defaults to the first 10 menus
+	// modify this as needed; future improvement could use an interface for setting and storing these
+	$network_menu_indices = range( 0, 9 );
 
 	// retrieve all registered menus in the theme
 	$registered_menus = get_registered_nav_menus();
@@ -37,7 +37,7 @@ function jayro_wp_nav_menu_filter( $content, $args )
 	// if the menu does not exist or no match is found, simply return the menu content from the existing network site
 	if ( $index === false || !in_array( $index, $network_menu_indices ) ) {
 		return $content;
-    }
+	}
 
 	// set a unique name for each site option by using the menu index value
 	$menu_option_name = 'jayro_network_menus_'.$index;
@@ -80,10 +80,10 @@ function jayro_wp_nav_menu_flush( $post_id, $post )
 	}
 
 	// loop through up to the first 10 network menus that were created and flush them
-    // this coincides with the default 10 menus - change as needed
+	// this coincides with the default 10 menus - change as needed
 	for ( $i = 0; $i < 10; $i++ )
 	{
-        // set the option name to the menu index
+		// set the option name to the menu index
 		$menu_option_name = 'jayro_network_menus_'.$i;
 
 		// make sure the option exists before flushing
